@@ -3,8 +3,10 @@
 /**
  * Module dependencies.
  */
-
-var app = require('../app');
+//ES5 👇🏻
+//var app = require('../app');
+//ES6 👇🏻
+import app from "../app";
 var debug = require('debug')('projnotes2022b:server');
 var http = require('http');
 
@@ -87,4 +89,7 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+console.log("Listening at ")
 }
+
+

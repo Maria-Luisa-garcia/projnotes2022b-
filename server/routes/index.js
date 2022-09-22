@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  //View Model 
+  res.render('index', { 
+    title: 'Express', 
+    author: 'Maria Luisa Garcia Tellez' 
+  });
 });
 
 module.exports = router;
